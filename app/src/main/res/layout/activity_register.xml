@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgBangkit"
+        android:layout_width="@dimen/_230dp"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_50dp"
+        android:src="@drawable/logobangkit"
+        android:contentDescription="@string/imglogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.storyappsubmission.cv.NameCustomView
+        android:id="@+id/cvName"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="@id/imgBangkit"
+        app:layout_constraintStart_toStartOf="@id/imgBangkit"
+        app:layout_constraintTop_toBottomOf="@id/imgBangkit"/>
+
+    <com.example.storyappsubmission.cv.EmailCustomView
+        android:id="@+id/cvEmail"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="@id/cvName"
+        app:layout_constraintStart_toStartOf="@id/cvName"
+        app:layout_constraintTop_toBottomOf="@id/cvName" />
+
+    <com.example.storyappsubmission.cv.PasswordCustomView
+        android:id="@+id/cvPass"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="@id/cvEmail"
+        app:layout_constraintStart_toStartOf="@id/cvEmail"
+        app:layout_constraintTop_toBottomOf="@id/cvEmail" />
+
+    <com.example.storyappsubmission.cv.SamePassCustomView
+        android:id="@+id/cvSamePass"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:hint="@string/confirm_password"
+        app:layout_constraintEnd_toEndOf="@id/cvPass"
+        app:layout_constraintStart_toStartOf="@id/cvPass"
+        app:layout_constraintTop_toBottomOf="@id/cvPass" />
+
+    <Button
+        android:id="@+id/btnRegis"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        android:text="@string/registration"
+        app:layout_constraintEnd_toEndOf="@id/cvSamePass"
+        app:layout_constraintStart_toStartOf="@id/cvSamePass"
+        app:layout_constraintTop_toBottomOf="@id/seePass"/>
+
+    <CheckBox
+        android:id="@+id/seePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:alpha="0"
+        android:text="@string/show_password"
+        app:layout_constraintStart_toStartOf="@+id/cvSamePass"
+        app:layout_constraintTop_toBottomOf="@+id/cvSamePass"
+        tools:alpha="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

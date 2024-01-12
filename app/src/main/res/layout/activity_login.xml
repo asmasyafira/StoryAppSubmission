@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LoginActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBangkit"
+        android:layout_width="@dimen/_230dp"
+        android:layout_height="@dimen/_200dp"
+        android:layout_marginTop="@dimen/_95dp"
+        android:contentDescription="@string/imglogo"
+        android:src="@drawable/logobangkit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.storyappsubmission.cv.EmailCustomView
+        android:id="@+id/cvEmail"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:hint="@string/email"
+        app:layout_constraintBottom_toTopOf="@+id/cvPass"
+        app:layout_constraintEnd_toEndOf="@id/imgBangkit"
+        app:layout_constraintStart_toStartOf="@id/imgBangkit"
+        app:layout_constraintTop_toBottomOf="@id/imgBangkit" />
+
+    <com.example.storyappsubmission.cv.PasswordCustomView
+        android:id="@+id/cvPass"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:hint="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/seePass"
+        app:layout_constraintEnd_toEndOf="@id/imgBangkit"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/imgBangkit" />
+
+    <CheckBox
+        android:id="@+id/seePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:alpha="0"
+        android:text="@string/show_password"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="@+id/imgBangkit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgBangkit"
+        tools:alpha="1" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toTopOf="@+id/txtNotRegis"
+        app:layout_constraintEnd_toEndOf="@id/imgBangkit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/imgBangkit" />
+
+    <TextView
+        android:id="@+id/txtNotRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_32dp"
+        android:layout_marginBottom="@dimen/_130dp"
+        android:alpha="0"
+        android:text="@string/dont_have_account"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        tools:alpha="1" />
+
+    <TextView
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3dp"
+        android:alpha="0"
+        tools:alpha="1"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtNotRegis"
+        app:layout_constraintTop_toTopOf="@+id/txtNotRegis" />
+</androidx.constraintlayout.widget.ConstraintLayout>

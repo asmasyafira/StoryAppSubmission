@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StoryAppSubmission</string>
+    <string name="imglogo">image logo</string>
+    <string name="eightCharPass">Password harusnya mempunyai 8 karakter</string>
+    <string name="emptyName">Nama tidak boleh kosong</string>
+    <string name="wrongEmailFormat">Format Email Salah</string>
+    <string name="emailTaken">Email Sudah Terdaftar, silakan coba lagi!</string>
+    <string name="passNotSame">Password tidak cocok</string>
+    <string name="email">Email</string>
+    <string name="noEmail">Email tidak valid</string>
+    <string name="noPass">Password tidak valid</string>
+    <string name="noName">Nama tidak valid</string>
+    <string name="noSamePass">Confirm Password tidak valid</string>
+    <string name="error_load">Kesalahan Memuat</string>
+    <string name="language">Bahasa</string>
+    <string name="logout">Keluar</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="uploadWarning">Upload foto dulu</string>
+    <string name="uploadDescWarning">Upload deskripsi dulu</string>
+    <string name="message">Pesan:</string>
+    <string name="package_name">com.example.storyappsubmission</string>
+    <string name="image_story">Cerita Gambar</string>
+    <string name="show_password">Tampilkan Kata Sandi</string>
+    <string name="name">Nama</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="registration">Registrasi</string>
+    <string name="create_your_new_story">Buat Cerita Baru Anda</string>
+    <string name="login">Gabung</string>
+    <string name="dont_have_account">Belum punya akun?</string>
+    <string name="register">Daftar</string>
+    <string name="image_from_story">Gambar dari cerita</string>
+    <string name="user_name">Nama belakang</string>
+    <string name="story_description">Deskripsi Cerita</string>
+    <string name="story_date">Tanggal Cerita</string>
+    <string name="post_stories">Posting Cerita</string>
+</resources>
